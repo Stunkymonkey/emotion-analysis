@@ -1,0 +1,9 @@
+;joy;sadness;trust;disgust;fear;anger;surprise;anticipation;;;joy;sadness;trust;disgust;fear;anger;surprise;anticipation
+joy;24;1;6;0;0;1;7;1;;anticipation;1;0;1;0;0;1;0;2
+sadness;1;5;1;0;0;2;1;0;;surprise;7;1;2;1;0;3;18;
+trust;6;1;16;0;1;1;2;1;;anger;1;2;1;1;0;18;;
+disgust;0;0;0;5;1;1;1;0;;fear;0;0;1;1;2;;;
+fear;0;0;1;1;2;0;0;0;;disgust;0;0;0;5;;;;
+anger;1;2;1;1;0;18;3;1;;trust;6;1;16;;;;;
+surprise;7;1;2;1;0;3;18;0;;sadness;1;5;;;;;;
+anticipation;1;0;1;0;0;1;0;2;;joy;24;;;;;;;
