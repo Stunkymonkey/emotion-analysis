@@ -1,8 +1,14 @@
+PREPROCESSING (id:21051)
+He who exalts himself shall be humbled; and he who humbles himself shall be exalted.Matt 23:12.     #SemST
+['exalt', 'shal', 'humbl', 'humbl', 'shal', 'exalted.matt', '23:12']
+
 EVAL auf SSEC:
 test_features = features(corpus_test)
 ssec_trained.eval(test_features)
 
-Joy
+Joy:
+precision recall    accuracy  f1        
+0.654     0.621     0.728     0.637
 Most Informative Features
                  lovewin = True                1 : 0      =     23.0 : 1.0
                     amaz = True                1 : 0      =     18.7 : 1.0
@@ -14,10 +20,10 @@ Most Informative Features
                    enjoy = True                1 : 0      =     10.0 : 1.0
                     stat = True                0 : 1      =      8.9 : 1.0
                   effect = True                0 : 1      =      8.4 : 1.0
-:
-Accuracy: 0.728
 ____________________
-Sadness
+Sadness:
+precision recall    accuracy  f1        
+0.687      0.75     0.655     0.717
 Most Informative Features
                   victim = True                1 : 0      =      9.0 : 1.0
                     sham = True                1 : 0      =      8.5 : 1.0
@@ -29,10 +35,10 @@ Most Informative Features
                   inspir = True                0 : 1      =      7.2 : 1.0
                      war = True                1 : 0      =      6.8 : 1.0
                     degr = True                1 : 0      =      6.7 : 1.0
-:
-Accuracy: 0.655
 ____________________
-Trust
+Trust:
+precision recall    accuracy  f1        
+0.612     0.644     0.579     0.628
 Most Informative Features
                     sham = True                0 : 1      =     12.1 : 1.0
                    bring = True                1 : 0      =      9.9 : 1.0
@@ -44,10 +50,10 @@ Most Informative Features
                     suck = True                0 : 1      =      7.1 : 1.0
             election2016 = True                1 : 0      =      6.7 : 1.0
                freeallfo = True                0 : 1      =      6.2 : 1.0
-:
-Accuracy: 0.579
 ____________________
-Disgust
+Disgust:
+precision recall    accuracy  f1        
+0.653     0.7       0.664     0.676
 Most Informative Features
                      rap = True                1 : 0      =     29.8 : 1.0
                 hypocrit = True                1 : 0      =     13.4 : 1.0
@@ -59,10 +65,10 @@ Most Informative Features
                    lying = True                1 : 0      =      9.9 : 1.0
     whyimnotvotingforhil = True                1 : 0      =      9.9 : 1.0
                    idiot = True                1 : 0      =      9.6 : 1.0
-:
-Accuracy: 0.664
 ____________________
-Anger
+Anger:
+precision recall    accuracy  f1        
+0.747     0.813     0.707     0.779
 Most Informative Features
                      sin = True                0 : 1      =     20.4 : 1.0
                     fuck = True                1 : 0      =     13.7 : 1.0
@@ -74,10 +80,10 @@ Most Informative Features
                     mary = True                0 : 1      =     10.9 : 1.0
                  liberty = True                0 : 1      =      9.9 : 1.0
                      lie = True                1 : 0      =      9.7 : 1.0
-:
-Accuracy: 0.707
 ____________________
-Fear
+Fear:
+precision recall    accuracy  f1        
+0.533     0.596     0.637     0.563
 Most Informative Features
                     risk = True                1 : 0      =     12.8 : 1.0
                    happy = True                0 : 1      =     11.8 : 1.0
@@ -89,10 +95,10 @@ Most Informative Features
                      ter = True                1 : 0      =     10.6 : 1.0
                      hrc = True                1 : 0      =      9.5 : 1.0
                     fear = True                1 : 0      =      9.3 : 1.0
-:
-Accuracy: 0.637
 ____________________
-Surprise
+Surprise:
+precision recall    accuracy  f1        
+0.209     0.267     0.692     0.235
 Most Informative Features
                      wow = True                1 : 0      =     32.6 : 1.0
                      sud = True                1 : 0      =     13.7 : 1.0
@@ -104,49 +110,48 @@ Most Informative Features
                    admir = True                1 : 0      =      9.5 : 1.0
                      pen = True                1 : 0      =      9.5 : 1.0
              prowomancho = True                1 : 0      =      9.5 : 1.0
-:
-Accuracy: 0.692
 ____________________
-Anticipation
+Anticipation:
+precision recall    accuracy  f1        
+0         0         1.0       0
 Most Informative Features
-:
-Accuracy: 1.0
+____________________
+Accumulated accuracy:	0.101
 
 ____________________
 ____________________
 EVAL auf eigenem Corpus:
 ssec_trained.eval(reddit_features, False)
-Joy
-:
-Accuracy: 0.434
+Joy:
+precision recall    accuracy  f1        
+0.23      0.609     0.434     0.333
 ____________________
-Sadness
-:
-Accuracy: 0.293
+Sadness:
+precision recall    accuracy  f1        
+0.055     0.8       0.293     0.103
 ____________________
-Trust
-:
-Accuracy: 0.374
+Trust:
+precision recall    accuracy  f1        
+0.141     0.562     0.374     0.225
 ____________________
-Disgust
-:
-Accuracy: 0.515
+Disgust:
+precision recall    accuracy  f1        
+0.078     0.8       0.515     0.143
 ____________________
-Anger
-:
-Accuracy: 0.333
+Anger:
+precision recall    accuracy  f1        
+0.167     0.667     0.333     0.267
 ____________________
-Fear
-:
-Accuracy: 0.657
+Fear:
+precision recall    accuracy  f1        
+0.0       0.0       0.657     0
 ____________________
-Surprise
-:
-Accuracy: 0.606
+Surprise:
+precision recall    accuracy  f1        
+0.176     0.353     0.606     0.235
 ____________________
-Anticipation
-:
-Accuracy: 0.98
+Anticipation:
+precision recall    accuracy  f1        
+0         0.0       0.98      0
 ____________________
 Accumulated accuracy:	0.0
-Multi-label confusion matrix
