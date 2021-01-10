@@ -1,0 +1,152 @@
+EVAL auf SSEC:
+test_features = features(corpus_test)
+ssec_trained.eval(test_features)
+
+Joy
+Most Informative Features
+                 lovewin = True                1 : 0      =     23.0 : 1.0
+                    amaz = True                1 : 0      =     18.7 : 1.0
+                   thank = True                1 : 0      =     16.2 : 1.0
+   makeamericagreatagain = True                1 : 0      =     12.2 : 1.0
+                     lov = True                1 : 0      =     11.6 : 1.0
+                  awesom = True                1 : 0      =     10.0 : 1.0
+                   dream = True                1 : 0      =     10.0 : 1.0
+                   enjoy = True                1 : 0      =     10.0 : 1.0
+                    stat = True                0 : 1      =      8.9 : 1.0
+                  effect = True                0 : 1      =      8.4 : 1.0
+:
+Accuracy: 0.728
+____________________
+Sadness
+Most Informative Features
+                  victim = True                1 : 0      =      9.0 : 1.0
+                    sham = True                1 : 0      =      8.5 : 1.0
+                 liberty = True                0 : 1      =      8.0 : 1.0
+                    road = True                0 : 1      =      8.0 : 1.0
+                    abus = True                1 : 0      =      7.9 : 1.0
+   makeamericagreatagain = True                0 : 1      =      7.3 : 1.0
+                 oppress = True                1 : 0      =      7.3 : 1.0
+                  inspir = True                0 : 1      =      7.2 : 1.0
+                     war = True                1 : 0      =      6.8 : 1.0
+                    degr = True                1 : 0      =      6.7 : 1.0
+:
+Accuracy: 0.655
+____________________
+Trust
+Most Informative Features
+                    sham = True                0 : 1      =     12.1 : 1.0
+                   bring = True                1 : 0      =      9.9 : 1.0
+                    degr = True                0 : 1      =      9.6 : 1.0
+                     hot = True                0 : 1      =      9.6 : 1.0
+                     nic = True                0 : 1      =      9.6 : 1.0
+                   delet = True                0 : 1      =      7.1 : 1.0
+                   delud = True                0 : 1      =      7.1 : 1.0
+                    suck = True                0 : 1      =      7.1 : 1.0
+            election2016 = True                1 : 0      =      6.7 : 1.0
+               freeallfo = True                0 : 1      =      6.2 : 1.0
+:
+Accuracy: 0.579
+____________________
+Disgust
+Most Informative Features
+                     rap = True                1 : 0      =     29.8 : 1.0
+                hypocrit = True                1 : 0      =     13.4 : 1.0
+                    sham = True                1 : 0      =     12.5 : 1.0
+                    abus = True                1 : 0      =     11.7 : 1.0
+                   bigot = True                1 : 0      =     11.7 : 1.0
+                     jes = True                0 : 1      =     11.3 : 1.0
+                     sin = True                0 : 1      =     11.1 : 1.0
+                   lying = True                1 : 0      =      9.9 : 1.0
+    whyimnotvotingforhil = True                1 : 0      =      9.9 : 1.0
+                   idiot = True                1 : 0      =      9.6 : 1.0
+:
+Accuracy: 0.664
+____________________
+Anger
+Most Informative Features
+                     sin = True                0 : 1      =     20.4 : 1.0
+                    fuck = True                1 : 0      =     13.7 : 1.0
+                     hat = True                1 : 0      =     13.2 : 1.0
+                 teamjes = True                0 : 1      =     11.8 : 1.0
+                     rap = True                1 : 0      =     11.4 : 1.0
+                     tip = True                0 : 1      =     11.1 : 1.0
+                  awesom = True                0 : 1      =     10.9 : 1.0
+                    mary = True                0 : 1      =     10.9 : 1.0
+                 liberty = True                0 : 1      =      9.9 : 1.0
+                     lie = True                1 : 0      =      9.7 : 1.0
+:
+Accuracy: 0.707
+____________________
+Fear
+Most Informative Features
+                    risk = True                1 : 0      =     12.8 : 1.0
+                   happy = True                0 : 1      =     11.8 : 1.0
+                    temp = True                1 : 0      =     11.7 : 1.0
+                    viol = True                1 : 0      =     11.7 : 1.0
+                   agend = True                1 : 0      =     10.6 : 1.0
+                 drought = True                1 : 0      =     10.6 : 1.0
+                  harass = True                1 : 0      =     10.6 : 1.0
+                     ter = True                1 : 0      =     10.6 : 1.0
+                     hrc = True                1 : 0      =      9.5 : 1.0
+                    fear = True                1 : 0      =      9.3 : 1.0
+:
+Accuracy: 0.637
+____________________
+Surprise
+Most Informative Features
+                     wow = True                1 : 0      =     32.6 : 1.0
+                     sud = True                1 : 0      =     13.7 : 1.0
+                   assum = True                1 : 0      =     11.6 : 1.0
+                       c = True                1 : 0      =     11.6 : 1.0
+                   civil = True                1 : 0      =     11.6 : 1.0
+                    hero = True                1 : 0      =     11.6 : 1.0
+                    movy = True                1 : 0      =     11.6 : 1.0
+                   admir = True                1 : 0      =      9.5 : 1.0
+                     pen = True                1 : 0      =      9.5 : 1.0
+             prowomancho = True                1 : 0      =      9.5 : 1.0
+:
+Accuracy: 0.692
+____________________
+Anticipation
+Most Informative Features
+:
+Accuracy: 1.0
+
+____________________
+____________________
+EVAL auf eigenem Corpus:
+ssec_trained.eval(reddit_features, False)
+Joy
+:
+Accuracy: 0.434
+____________________
+Sadness
+:
+Accuracy: 0.293
+____________________
+Trust
+:
+Accuracy: 0.374
+____________________
+Disgust
+:
+Accuracy: 0.515
+____________________
+Anger
+:
+Accuracy: 0.333
+____________________
+Fear
+:
+Accuracy: 0.657
+____________________
+Surprise
+:
+Accuracy: 0.606
+____________________
+Anticipation
+:
+Accuracy: 0.98
+____________________
+Accumulated accuracy:	0.0
+Multi-label confusion matrix
