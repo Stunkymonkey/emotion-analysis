@@ -1,0 +1,75 @@
+\mode<presentation>
+\usepackage{helvet}
+\useoutertheme[footline=authortitle,subsection=false,compress]{miniframes}
+\setbeamersize{text margin left=15pt,text margin right=15pt}
+\newcommand*\circled[1]{%
+  \raisebox{-0.5\baselineskip}{\tikz{%
+      \node[color=imslightblue,draw,circle,inner sep=3pt, line width=3pt]{#1};
+    }
+  }
+}
+\newcommand*\smallcircled[1]{%
+  \raisebox{-0.2\baselineskip}{\tikz{%
+      \node[fill,color=imslightblue,draw,circle,inner sep=1pt]{#1};
+    }
+  }
+}
+\definecolor{imsanthrazit}{RGB}{62,68,76}
+\definecolor{imsblue}{RGB}{0,81,158}
+\definecolor{imslightgray}{RGB}{224,224,224}
+\definecolor{imslightblue}{RGB}{0,190,255}
+\definecolor{darkgreen}{RGB}{0,100,0}
+\setbeamertemplate{section in head/foot shaded}[default][30]
+\useinnertheme{circles}
+\setbeamercolor{structure}{fg=black}
+\setbeamercolor{palette primary}{fg=imsblue,bg=imsblue!70}
+\setbeamercolor{palette secondary}{fg=imsblue,bg=imsblue!10}
+\setbeamercolor{palette tertiary}{fg=imsanthrazit,bg=white!2000!imsanthrazit}
+\setbeamercolor{block title}{fg=white,bg=imsblue}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!25!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!25!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!25!bg}
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{} 
+\setbeamercolor{section in toc}{fg=white}
+\setbeamercolor{section in toc shaded}{fg=black}
+\setbeamercolor{subsection in toc}{fg=white}
+\setbeamercolor{subsection in toc shaded}{fg=black}
+\setbeamercolor{subsubsection in toc}{fg=white}
+\setbeamercolor{subsubsection in toc shaded}{fg=black}
+\setbeamertemplate{section in toc shaded}[default][50]
+\setbeamertemplate{subsection in toc shaded}[default][50]
+\setbeamertemplate{subsubsection in toc shaded}[default][50]
+
+\setbeamerfont{frametitle}{size=\LARGE}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{headline}{size=\fontsize{6}{11}}
+\setbeamertemplate{headline}{\insertnavigation{\textwidth}}
+
+\setbeamertemplate{frametitle} 
+{%
+  \vspace{3mm}
+    \insertframetitle
+  \vspace{3mm}
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}
+{
+  \centerline{\begin{tabular*}{0.97\paperwidth}{@{\extracolsep{\fill}}lllr}
+      University of Stuttgart &
+      \insertshortauthor
+      &
+      \today
+      &
+%      \insertframenumber{} / \inserttotalframenumber
+    \end{tabular*}}
+    \vspace{1mm}
+}
+
+\newcommand{\blueemph}[1]{\textcolor{imsblue}{#1}}
+
+\mode<all>
+\usepackage{hyperref}
+
