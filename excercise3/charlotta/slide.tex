@@ -2,52 +2,25 @@
 \usepackage{emotionanalysis}
 
 % Please add your name here
-\author{Firstname Lastname}
+\author{Carlotta Quensel}
 
 \begin{document}
 
 % add the topic here that you work on
 % choose from:
-% Face
-% Images
-% Body Postures
 % Robotics
 % Speech
-% Physiological Sensors
 % Generation
-% Related concepts
-% Application
-\section{Topic}
+\section{Robotics}
 \begin{frame}
-  \frametitle{Short name of the paper}
+  \frametitle{Therapy robots for children with autism}
   \begin{itemize}
-  \item {\footnotesize \blueemph{Author Name 1, Author Name 2, \ldots (year): Paper title, Proceedings/Journal name. \url{https://www.url.com}}}
-  \item \blueemph{Motivation}: One sentence about the research question/motivation of this paper
-  \item \blueemph{Data}: How did they get data, or which data did they use.
-  \item \blueemph{Method}: A short description of the method and how they applied it.
-  \item \blueemph{Main Result}: Mention the main result.
+  \item {\footnotesize \blueemph{Kim, Azzi, et. al (2017): Audio-based emotion estimation for interactive robotic therapy for children with autism spectrum disorder, \textit{14th URAI}. \url{https://ieeexplore.ieee.org/document/7992881}}}
+  \item \blueemph{Motivation}: Analyse emotion in speech to interact with children with ASD in real time. Split the reactions between a face and gesture robot, to train recognizing emotions as different expressions together.
+  \item \blueemph{Data}: Interactive Emotional Dyadic Motion Capture database; 12h of dialogue; labelled with VAD 
+  \item \blueemph{Method}: Feature extraction with openSMILE, 3 SVMs for VAD, real time application: feature normalization with 10 mins of "neutral state" data
+  \item \blueemph{Main Result}: Normalization with neutral data improves accuracy for new speakers, dominance has much lower accuracy than valence or activation
   \end{itemize}  
-\end{frame}
-
-
-\section{Example Slide}
-
-\begin{frame}
-  \frametitle{Stance Sentiment Corpus}
-  \begin{itemize}
-  \item {\footnotesize \blueemph{Schuff, Barnes, et al. (2018): Annotation, modelling and analysis of fine-grained emotions on a stance and sentiment detection corpus, WASSA. \url{https://www.aclweb.org/anthology/W17-5203/}}}
-  \item \blueemph{Motivation}: Generate a multi-label Twitter corpus
-    with emotions. Understand which model architecture perform
-    well. Understand interactions of emotions with sentiment and
-    stance labels.
-  \item \blueemph{Data}: Reannotation of existing stance-Twitter
-    corpus from SemEval 2018, approximately 4870 Tweets.
-  \item \blueemph{Method}: Corpus analysis and Application of Bag-of-words Maxent, SVM, LSTM, BiLSTM, CNN
-  \item \blueemph{Main Result}: Embeddings-based methods show higher
-    recall than models with discrete features. Sentiment polarity
-    labels correlated with positivity and negativity of emotions, but
-    there are interesting outliers.
-  \end{itemize}
 \end{frame}
 
 \end{document}
