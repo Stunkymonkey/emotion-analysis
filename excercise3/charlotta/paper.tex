@@ -9,35 +9,34 @@
 \thispagestyle{empty}
 
 % Please add your name here
-\section*{Your Name}
+\section*{Carlotta Quensel}
 %
 % add the reference of the paper that you summarize here:
 \begin{quote}
-  Author Name 1, Author Name 2, \ldots (year): Paper title, Proceedings/Journal name. \url{https://www.url.com}
+  J. C. Kim, P. Azzi, M. Jeon, A. M. Howard and C. H. Park (2017). ''Audio-based emotion estimation for interactive robotic therapy for children with autism spectrum disorder'', \textit{14th International Conference on Ubiquitous Robots and Ambient Intelligence (URAI)}, Jeju, pp. 39-44, \url{https://ieeexplore.ieee.org/document/7992881}
 \end{quote}
 
 % What is the main motivation/research hypothesis?
 \subsection*{Motivation}
-Text
+The paper is concerned with emotion analysis from speech. For children with autism spectrum disorder to train recognizing emotions, therapy robots with easy to understand emotion expressions need to generate appropriate reactions in real-time. The main goal is therefore to work towards real time emotion analysis from speech.
 
 % On which data do they work? How did they obtain this data? Any
 % interesting properties to be mentioned?
 \subsection*{Data}
-Text
+To train the emotion classifier, the IEMOCAP (Interactive Emotional Dyadic Motion Capture) database was used. The database contains 12 hours of dialogue between five female and five male actors. The sessions are about 5 minutes long and every phrase is annotated by three human evaluators with valence, dominance and activation scores between 1 and 5. These scores map onto the categorical emotion labels excitement, frustration, disgust, fear, surprise, anger, sadness, happiness, and neutral state.
 
 % How did they answer the research hypotheses? What kind of methods
 % did they apply/use?
 \subsection*{Method}
-Text
+ The speech features were extracted from the IEMOCAP using openSMILE and projected onto 150 principal components for dimension reduction. For the real-time implementation, the dimension reduced features are normalized using only a few 'neutral state' data samples for each speaker. Thus, the algorithm can estimate the sound of a person in neutral state and classify emotions from there. The classifier was trained as three SVMs each for one dimension of the VAD score with a linear kernel function. For a new speaker, the normalization is performed in the same manner and the features are passed to the three SVMs.
 
 % What is the main finding of this paper?
 \subsection*{Main Result}
-Text
-
+The new method of normalizing features improves the classifier's accuracy compared to previous methods and the described real-time classifier has promising results.
 % What is your own opinion? What are limitations of this work? How
 % could that be improved? What might be next steps?
 \subsection*{Critical Reflection, Limitations}
-Text
+While the accuracy for valence and activation is acceptable, dominance shows low scores, which is a frequent problem in speech analysis. Because the classifier has to work in real-time, the method does not use a multi-temporal approach, which would improve accuracy but slow down the classifier. The paper evaluates the classifier on data from neurotypical adults, therefore to use the findings in therapy robots for autistic children, more speech data from (neurodiverse) children is needed, as well as general evaluations on child-robot interactions.
 
 \clearpage
 
