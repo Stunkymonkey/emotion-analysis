@@ -13,49 +13,44 @@
 %
 % add the reference of the paper that you summarize here:
 \begin{quote}
-	Jelle Saldien, Kristof Goris, \ldots (2010): Expressing Emotions with the Social Robot Probo, International Journal of Social Robotics. \url{https://link.springer.com/content/pdf/10.1007/s12369-010-0067-6.pdf}
+	Jelle Saldien, et al. (2010): Expressing Emotions with the Social Robot Probo, International Journal of Social Robotics. \url{https://link.springer.com/content/pdf/10.1007/s12369-010-0067-6.pdf}
 \end{quote}
 
 % What is the main motivation/research hypothesis?
 \subsection*{Motivation}
 
-A study has shown, that only 7\% of affective information is transferred
-by spoken language, 38\% is transferred by paralanguage, and 55\% of transfer is due to facial expressions. A social robot Probo was developed, to do further research on the recognition of emotions .
-
-Animal assisted therapy/-activities are expected to have useful psychological, physiological, and social effects on people. For different reasons attempts are made to rplace these animals by robots. 
+A study has shown that only 7\% of affective information is transferred
+by spoken language 38\% is transferred by paralanguage, and 55\% of transfer is due to facial expressions. A social robot Probo was developed to do further research on the recognition of emotions.It has its own identity, including a name, a history. 
+Animal assisted therapy/-activities are expected to have useful psychological, physiological, and social effects on people. For several reasons attempts are made to replace these animals by robots.
 
 % On which data do they work? How did they obtain this data? Any
 % interesting properties to be mentioned?
 \subsection*{Prototype}
 
-Probo is a huggable robot and looks like an animal. It has its own identity, including a name, a history. Probo is equipped with animated ears, eyes, eyebrows, eyelids, mouth, neck, and an interactive belly-screen. The special thing about Probo is his eye-catching trunk to intensify certain emotional expressions. The robot has 20 degrees of freedom (DOF) in its head. The robot is covered with a foam layer and a removable fur-jacket. For some online-tests, a 3D virtual model of Probo has been created. 
-
-To represent the emotions, Ekman and Friesen have defined the Facial Action Coding System (FACS) to define for each emotion-specific Action Units (AU), which correspond to muscles in the face.
-
+Probo is a huggable robot and looks like an animal. Probo is equipped with animated ears, eyes, eyebrows, eyelids, mouth, neck, and an interactive belly-screen and a trunk to intensify certain emotional expressions. The robot has 20 degrees of freedom in its head. The robot is covered with a foam layer and a removable fur-jacket. For online-evaluation, a 3D virtual model of Probo has been created.
+To represent the emotions, the Facial Action Coding System (FACS) (by Ekman and Friesen)was used to define for each emotion-specific Action Units (AU), which correspond to muscles in the face.
 The basic facial expressions are represented as a vector in the 2-dimensional emotion space based on Russel’s circumplex model of affect (valence-arousal). To have a smooth transition between emotions, the current emotion could always be interpolated with the neutral emotion, which has to be used when switching.
 
 % How did they answer the research hypotheses? What kind of methods
 % did they apply/use?
 \subsection*{Method}
 
-In a first pilot study, the virtual model was used to test the recognition of facial expressions. For other tests, Probo was used uncovered or covered. A questionnaire displaying pictures and a multiple-choice of emotion words were used. Children and adults were taken as subjects, respectively.
+The first pilot study, the virtual model was used to test the recognition of facial expressions. For other tests, Probo was used uncovered or covered. A questionnaire displaying pictures and a multiple-choice of emotion words were used. The same amount of children and adults took part.
 
 % What is the main finding of this paper?
 \subsection*{Main Result}
 
-For the evaluation of the virtual prototype adults and children have been conducted to classify 8 emotions (Eckman + neutral + tired). Adults had an accuracy of 67\% and children 60\%. Further evaluation for the Eckman emotions has been done with children. For the virtual prototype, they reached an accuracy of 88\%, the uncovered 83\%, and for the covered one 84\%. There has been no significant difference found based on the gender or age of participants.
+For the evaluation of the virtual prototype adults and children were to classify 8 emotions (Eckman + \textit{neutral} + \textit{tired}). Adults had an accuracy of 67\% and children 60\%. Further evaluation for the Eckman emotions has been done with children. For the virtual prototype, they reached an accuracy of 88\%, the uncovered 83\%, and for the covered one 84\%. There has been no significant difference found based on the gender or age of participants.
 
-Other prototypes (more mechanical appearance) received a lower score: Kismet 73\%; Eddie 57\%; Aryan 69\%; Feelix 45\%. 
+%Other prototypes (more mechanical appearance) received a lower score: Kismet 73\%; Eddie 57\%; Aryan 69\%; Feelix 45\%.
 
 % What is your own opinion? What are the limitations of this work? How
 % could that be improved? What might be the next steps?
 \subsection*{Critical Reflection, Limitations}
 
-The initial development was done with the virtual avatar. Therefore the recognition is very good. The last evaluation is done with the mechanical prototype. This one is different because the fur behaves differently than in the virtual world. The mouth e.g. is very hard to recognize because it is covered compared to the uncovered/virtual prototype. Without the trunk some emotions would be very hard to be recognized for example disgust and sadness have very subtle changes. Adding more activation units could solve this problem.
-
+The initial development was done with the virtual avatar (resulting in good accuracys). Because the fur behaves differently than in the virtual world, the final evaluation-accuracy (with the mechanical prototype) differs. The mouth e.g. is very hard to recognize because it is covered compared to the uncovered/virtual prototype. Without the trunk some emotions would be very hard to be recognized e.g. disgust and sadness have very subtle changes. Adding more activation units could solve this problem.
 The prototype was only evaluated for facial emotions, but body-language like gestures are completely ignored. This would further improve the recognition.
-
-The robot has already implemented several input types. Using the inputs to detect the emotional state of users is a hard, but crucial step towards automation. 
+The robot has already implemented several input types, but not automatic process has been done so far.
 
 \clearpage
 
