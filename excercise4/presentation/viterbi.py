@@ -1,6 +1,3 @@
-import pandas
-
-
 class HiddenMarkovModel:
     transitions = dict()
     emissions = dict()
