@@ -2,7 +2,7 @@
 \usepackage{scrlayer-scrpage}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{listings}
+\usepackage{listings,graphicx,multirow}
 \usepackage[bf,sf]{caption}
 \DeclareCaptionLabelFormat{plain}{\thesection.#2}
 \captionsetup[figure]{labelformat=plain,labelsep=quad}
@@ -35,6 +35,18 @@ For the complex approach, we chose a deep learning algorithm. The used transform
 \section{Evaluation}
 To evaluate our methods, we count intersections between the gold and the predicted 
 target sequence as correct labels (True Positives). When a gold label sequence spans more than one predicted sequence or the other way around, we only count one of these multiples and ignore the rest. 
+
+\begin{figure}[h!]
+\centering
+\begin{tabular}{cc||c|c}
+\multicolumn{2}{c||}{} & \multicolumn{2}{c}{\textbf{Gold}}\\
+\multicolumn{2}{c||}{} & In & Out\\\hline
+\multirow{2}{*}{\rotatebox{90}{\textbf{Pred}}} & In & & \\\cline{2-4}
+& Out & &\\
+\end{tabular}
+\caption{Confusion matrix of the target sequences predicted by the Hidden Markov model trained on the Reman data}
+\end{figure}
+
 \appendix
 \section{Code}
 \subsection{HMM and Viterbi}
